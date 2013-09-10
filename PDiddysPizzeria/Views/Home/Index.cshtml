@@ -1,0 +1,23 @@
+﻿@model PDiddysPizzeria.Models.PizzaModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>PDiddy's Pizzeria</h1>
+<h2>Welcome to the home page</h2>
+<h3>BuyPizza</h3>
+
+<table>
+    <tr>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>@Model.Size.Name</td>
+    </tr>
+    <tr>
+        @foreach (var item in Model.Toppings)
+        {
+            <td>@item</td>
+        }
+    </tr>
+</table>
