@@ -7,6 +7,9 @@
 <h2>Welcome to the home page</h2>
 <h3>BuyPizza</h3>
 
+<legend>Check out our Coupons</legend>
+
+@Html.ActionLink("Click Here", "Index", "Coupons", new {}, new { @class = "btn btn-primary", id = "hypCouponsHome" })
 <table>
     <tr>
         <td>@Model.Name</td>
